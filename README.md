@@ -1,21 +1,21 @@
 # Diabetes Model Comparison Using Bootstrap Evaluation
 
 This project compares different machine learning classifiers to predict diabetes outcomes using the Pima Indians Diabetes dataset. It applies bootstrapping to evaluate model performance with statistical reliability.
-
+---
 ## 📊 Dataset
 
 - **Source**: [Pima Indians Diabetes Dataset (Kaggle)](https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database)
 - **Records**: 768
 - **Features**: 8 predictor variables (e.g., Glucose, BMI, Age)
 - **Target**: `Outcome` (0 = No Diabetes, 1 = Diabetes)
-
+---
 ## 🛠️ Tools & Libraries
 
 - Python, Pandas, NumPy
 - Scikit-learn, Matplotlib
 - Keras (MLP only)
 - XGBoost, LightGBM (prepared for future extensions)
-
+---
 ## 📌 Models Used
 
 - Logistic Regression
@@ -23,7 +23,7 @@ This project compares different machine learning classifiers to predict diabetes
 - Decision Tree Classifier
 - Naive Bayes
 - Multi-layer Perceptron (MLP)
-
+---
 ## ⚙️ Methodology
 
 1. **Data Preprocessing**
@@ -41,7 +41,7 @@ This project compares different machine learning classifiers to predict diabetes
    - Accuracy ± Standard Deviation
    - MAE (Mean Absolute Error)
    - RMSE (Root Mean Squared Error)
-
+---
 ## 📈 Results Summary
 
 | Model             | Accuracy ± SD        | MAE      | RMSE    |
@@ -54,34 +54,36 @@ This project compares different machine learning classifiers to predict diabetes
 
 ✅ **Best Accuracy**: Naive Bayes  
 ❌ **Least Reliable**: MLP (highest error and variance)
-
+---
 ## 📁 Project Structure
+```bash
 📦 aiml-diabetes-bootstrap
 ├── AIML_Project.ipynb # Jupyter notebook with full code
 ├── diabetes.csv # Dataset used for training and evaluation
 ├── AIML_Project.pdf # PDF version of the project report
 ├── AIML_Project-Colab.pdf # Colab-exported PDF notebook
 ├── README.md # Project overview and documentation
-
+```
+---
 
 ## 📉 Visualizations
 
 - Feature Correlation Heatmap
 - Accuracy vs. Iterations for each model
 - Bar plots comparing Accuracy, MAE, and RMSE
-
+---
 ## 🚀 Future Improvements
 
 - Add XGBoost and LightGBM into the bootstrap loop
 - Perform GridSearchCV for hyperparameter tuning
 - Try ensemble methods (voting, stacking)
 - Use k-fold cross-validation for better generalization
-
+---
 ## 👨‍💻 Author
 
 **Deekshith**  
 📍 GitHub: [https://github.com/Deekshithpoleboina](https://github.com/Deekshithpoleboina)
-
+---
 ## 📄 License
 
 This project is licensed under the MIT License. See the `LICENSE` file for details.
