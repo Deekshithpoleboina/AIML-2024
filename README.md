@@ -55,11 +55,27 @@ This project compares different machine learning classifiers to predict diabetes
 ✅ **Best Accuracy**: Naive Bayes  
 ❌ **Least Reliable**: MLP (highest error and variance)
 
+## 📁 Project Structure
+
+
 ## 📉 Visualizations
 
 - Feature Correlation Heatmap
 - Accuracy vs. Iterations for each model
 - Bar plots comparing Accuracy, MAE, and RMSE
 
-## 📁 Project Structure
+## 🚀 Future Improvements
 
+- Add XGBoost and LightGBM into the bootstrap loop
+- Perform GridSearchCV for hyperparameter tuning
+- Try ensemble methods (voting, stacking)
+- Use k-fold cross-validation for better generalization
+
+## 👨‍💻 Author
+
+**Shravzzzz**  
+📍 GitHub: [https://github.com/Deekshith]((https://github.com/Deekshithpoleboina))
+
+## 📄 License
+
+This project is licensed under the MIT License. See `LICENSE` file for details.
