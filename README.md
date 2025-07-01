@@ -1,67 +1,65 @@
-# Robust Model Evaluation on Diabetes Dataset Using Bootstrapped Classifier Ensembles
+# Diabetes Model Comparison Using Bootstrap Evaluation
 
-This project explores multiple classification algorithms to predict diabetes outcomes based on medical data. It introduces bootstrapping as a statistical technique to estimate uncertainty in model performance and provides a comparative evaluation using accuracy, mean absolute error (MAE), and root mean squared error (RMSE).
+This project compares different machine learning classifiers to predict diabetes outcomes using the Pima Indians Diabetes dataset. It applies bootstrapping to evaluate model performance with statistical reliability.
 
 ## 📊 Dataset
 
-The dataset used is the [Pima Indians Diabetes Dataset](https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database), which contains diagnostic measurements for female patients of Pima Indian heritage.
+- **Source**: [Pima Indians Diabetes Dataset (Kaggle)](https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database)
+- **Records**: 768
+- **Features**: 8 predictor variables (e.g., Glucose, BMI, Age)
+- **Target**: `Outcome` (0 = No Diabetes, 1 = Diabetes)
 
-- **Samples**: 768
-- **Features**: 8 medical predictor variables (e.g., glucose level, BMI)
-- **Target**: Binary outcome (`0`: No Diabetes, `1`: Diabetes)
+## 🛠️ Tools & Libraries
 
-## 🛠️ Technologies & Libraries
+- Python, Pandas, NumPy
+- Scikit-learn, Matplotlib
+- Keras (MLP only)
+- XGBoost, LightGBM (prepared for future extensions)
 
-- Python 3
-- Pandas, NumPy, Matplotlib
-- Scikit-learn
-- Keras
-- XGBoost, LightGBM (for extensibility)
-- Colab for development
+## 📌 Models Used
 
-## 🧪 Models Compared
+- Logistic Regression
+- Support Vector Machine (SVM)
+- Decision Tree Classifier
+- Naive Bayes
+- Multi-layer Perceptron (MLP)
 
-1. Logistic Regression
-2. Support Vector Machine (SVM)
-3. Decision Tree Classifier
-4. Naive Bayes
-5. Multi-layer Perceptron (MLP)
+## ⚙️ Methodology
 
-## 📈 Methodology
-
-1. **Data Preprocessing**:
-   - Missing values handled using `SimpleImputer`.
-   - Target variable separated from predictors.
+1. **Data Preprocessing**
+   - Handle missing values with `SimpleImputer`.
+   - Split into features and target.
    - Train/test split (80/20).
 
-2. **Bootstrapping**:
-   - Each model is evaluated using 100 bootstrap resampling iterations.
-   - Standard deviation is used to compute uncertainty (± margin) of accuracy.
+2. **Bootstrapping Evaluation**
+   - Resample training data with replacement (100 iterations).
+   - Train each model repeatedly.
+   - Evaluate on test set for each iteration.
+   - Collect mean accuracy and standard deviation (uncertainty).
 
-3. **Performance Metrics**:
-   - Accuracy (mean + standard deviation)
-   - Mean Absolute Error (MAE)
-   - Root Mean Squared Error (RMSE)
-   - Correlation matrix of features
-   - Visualization of bootstrap accuracy convergence
+3. **Metrics**
+   - Accuracy ± Standard Deviation
+   - MAE (Mean Absolute Error)
+   - RMSE (Root Mean Squared Error)
 
-## 📊 Results Summary
+## 📈 Results Summary
 
-| Model               | Accuracy (± Uncertainty) | MAE      | RMSE    |
-|--------------------|--------------------------|----------|---------|
-| Logistic Regression| 0.7512 ± 0.0198          | 0.2532   | 0.5032  |
-| SVM                | 0.7575 ± 0.0127          | 0.2337   | 0.4835  |
-| Decision Tree      | 0.6820 ± 0.0299          | 0.2402   | 0.4902  |
-| Naive Bayes        | 0.7603 ± 0.0227          | 0.2337   | 0.4835  |
-| MLP                | 0.6771 ± 0.0341          | 0.3247   | 0.5698  |
+| Model             | Accuracy ± SD        | MAE      | RMSE    |
+|------------------|----------------------|----------|---------|
+| Logistic Reg.     | 0.7512 ± 0.0198      | 0.2532   | 0.5032  |
+| SVM               | 0.7575 ± 0.0127      | 0.2338   | 0.4835  |
+| Decision Tree     | 0.6820 ± 0.0299      | 0.2403   | 0.4902  |
+| Naive Bayes       | 0.7603 ± 0.0227      | 0.2338   | 0.4835  |
+| MLP               | 0.6771 ± 0.0341      | 0.3247   | 0.5698  |
 
-Naive Bayes showed the best average performance with lowest MAE and RMSE among tested models.
+✅ **Best Accuracy**: Naive Bayes  
+❌ **Least Reliable**: MLP (highest error and variance)
 
 ## 📉 Visualizations
 
-- Correlation heatmap of features
-- Model accuracy distribution over 100 bootstrap iterations
-- Bar plots for model performance and error comparison
+- Feature Correlation Heatmap
+- Accuracy vs. Iterations for each model
+- Bar plots comparing Accuracy, MAE, and RMSE
 
-## 📂 Folder Structure
+## 📁 Project Structure
 
