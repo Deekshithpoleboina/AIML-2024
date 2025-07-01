@@ -63,6 +63,7 @@ This project compares different machine learning classifiers to predict diabetes
 ├── AIML_Project-Colab.pdf # Colab-exported PDF notebook
 ├── README.md # Project overview and documentation
 
+
 ## 📉 Visualizations
 
 - Feature Correlation Heatmap
@@ -79,8 +80,8 @@ This project compares different machine learning classifiers to predict diabetes
 ## 👨‍💻 Author
 
 **Deekshith**  
-📍 GitHub: [[https://github.com/Deekshith](https://github.com/Deekshithpoleboina)]((https://github.com/Deekshithpoleboina))
+📍 GitHub: [https://github.com/Deekshithpoleboina](https://github.com/Deekshithpoleboina)
 
 ## 📄 License
 
-This project is licensed under the MIT License. See `LICENSE` file for details.
+This project is licensed under the MIT License. See the `LICENSE` file for details.
