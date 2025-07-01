@@ -56,7 +56,12 @@ This project compares different machine learning classifiers to predict diabetes
 ❌ **Least Reliable**: MLP (highest error and variance)
 
 ## 📁 Project Structure
-
+📦 aiml-diabetes-bootstrap
+├── AIML_Project.ipynb # Jupyter notebook with full code
+├── diabetes.csv # Dataset used for training and evaluation
+├── AIML_Project.pdf # PDF version of the project report
+├── AIML_Project-Colab.pdf # Colab-exported PDF notebook
+├── README.md # Project overview and documentation
 
 ## 📉 Visualizations
 
