@@ -1,6 +1,6 @@
 # Diabetes Model Comparison Using Bootstrap Evaluation
 
-*This project compares different machine learning classifiers to predict diabetes outcomes using the Pima Indians Diabetes dataset. It applies bootstrapping to evaluate model performance with statistical reliability.*
+This project compares different machine learning classifiers to predict diabetes outcomes using the Pima Indians Diabetes dataset. It applies bootstrapping to evaluate model performance with statistical reliability.
 ---
 ## 📊 Dataset
 
