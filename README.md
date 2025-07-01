@@ -73,8 +73,8 @@ This project compares different machine learning classifiers to predict diabetes
 
 ## 👨‍💻 Author
 
-**Shravzzzz**  
-📍 GitHub: [https://github.com/Deekshith]((https://github.com/Deekshithpoleboina))
+**Deekshith**  
+📍 GitHub: [[https://github.com/Deekshith](https://github.com/Deekshithpoleboina)]((https://github.com/Deekshithpoleboina))
 
 ## 📄 License
 
